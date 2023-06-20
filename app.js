@@ -31,7 +31,8 @@ async function startApp () {
 
   console.log('Database connected');
 
-  app.listen(9000, () => {
+  const PORT = process.env.PORT || 9000;
+  app.listen(PORT, () => {
     console.log("App is live and running");
   });
 }
